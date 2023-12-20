@@ -94,20 +94,21 @@ body {
     display: flex;
     flex-direction: column;
 }
-#CENTER .optionsP .bar .Paper img {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
+#CENTER .optionsP .bar button {
+    border-radius: 12px;
+    background-color: #fff;
 }
-#CENTER .optionsP .bar .Rock img {
+#CENTER .optionsP .bar #Paper img {
     width: 50px;
     height: 50px;
-    border-radius: 8px;
 }
-#CENTER .optionsP .bar .Sissors img {
+#CENTER .optionsP .bar #Rock img {
     width: 50px;
     height: 50px;
-    border-radius: 8px;
+}
+#CENTER .optionsP .bar #Sissors img {
+    width: 50px;
+    height: 50px;
 }
 #CENTER .machine {
     flex-direction: row;
@@ -153,11 +154,11 @@ body {
     font-size: 20px;
     text-align: center;
 }
-#LOWER .PlayerScore, .MachineScore {
+#LOWER #PlayerScore, #MachineScore {
     text-align: center;
     font-size: 40px;
 }
-#LOWER .PlayerScore, .MachineScore{
+#LOWER #PlayerScore, #MachineScore{
     background-color: #5d5d84;
     border-radius: 8px;
     width: 50px;

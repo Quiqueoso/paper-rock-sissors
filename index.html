@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Paper, Rock and Sissors</title>
+        <title>Rock Paper or Scissors</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         </div>
         <div id="UP">
             <div class="Title">
-                <h1>Paper, Rock and Sissors</h1>
+                <h1>Rock Paper or Scissors</h1>
             </div>
         </div>
         <div id="CENTER">
@@ -28,15 +28,15 @@
                 </div>
                 <div class="optionsP">
                     <div class="bar">
-                        <div class="Paper" onclick=select() ondrag=higtlight()>
+                        <button id="Paper" onclick=Player(0),getComputerChoice()>
                             <img src="images/bola-papel-arrugada_420555-213.avif">
-                        </div>
-                        <div class="Rock" onclick=select() ondrag=higtlight()>
+                        </button>
+                        <button id="Rock" onclick=Player(3),getComputerChoice()>
                             <img src="images/Rock.avif">
-                        </div>
-                        <div class="Sissors" onclick=select() ondrag=higtlight()>
+                        </button>
+                        <button id="Sissors" onclick=Player(6),getComputerChoice()>
                             <img src="images/tijeras.jpeg">
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -53,12 +53,12 @@
             </div>
         </div>
         <div id="LOWER">
-            <div class="PlayerScore">0</div>
+            <div id="PlayerScore">0</div>
             <div class="score">
                 <p>SCORE</p>
             </div>
-            <div class="MachineScore">0</div>
+            <div id="MachineScore">0</div>
         </div>
-        <script src="/script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
